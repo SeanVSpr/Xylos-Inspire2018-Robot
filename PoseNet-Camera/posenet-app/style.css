@@ -1,0 +1,73 @@
+
+#arrows {
+    box-sizing: border-box;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+#controltimer {
+    overflow: auto;
+}
+
+#control  {
+    background-color: green;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+}
+
+#timer {
+    float: left;
+    padding-left: 10%;
+}
+
+.timertext {
+    text-align: center;
+}
+
+#arrows img {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    float: left; 
+    position: absolute;
+    background-color:white;
+}
+
+#forward {
+    top: 0px;
+    left: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+#left {
+    top: 50px;
+    left: 0px;
+}
+
+#stay {
+    top: 50px;
+    left: 50px;
+    background: yellow;
+}
+
+#right {
+    top: 50px;
+    left: 100px;
+}
+
+#backward {
+    top: 100px;
+    left: 50px;
+}
+
+
+
+
+

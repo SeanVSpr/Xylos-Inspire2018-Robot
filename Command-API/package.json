@@ -1,0 +1,15 @@
+{
+  "name": "ev3-websocket",
+  "version": "1.0.0",
+  "description": "A socket.io implementation for communication with the EV3Brick",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "sean.van.sprundel@xylos.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}

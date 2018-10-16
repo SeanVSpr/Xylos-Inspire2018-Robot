@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Inspire Lego robot demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="startup.js"></script>
+</head>
+
+<body>
+
+    <!-- Override F5 refresh to shoot and handle key events for manual control. -->
+    <script src="handleKeyEvents.js"></script>
+    <div id="videocontrol">
+        <div id="loading">
+                Loading the model...
+        </div>
+        <div id="main" style="display:none">
+                <video autoplay="true" id="video" style=" -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                display: none;
+                ">
+                </video>
+                <canvas id="output"></canvas>
+        </div>
+        <div id = "controltimer">
+            <div id="control">
+                <div>
+                    <h2 id="commandText">stay</h1>
+                </div>
+                <div id="arrows">
+                    <img src="images/forward.png" alt="forward" class="controlbutton" id="forward" onmousedown='onclickArrow("forward")' onmouseup='onclickArrow("stay")'>
+                    <img src="images/left.png" alt="left" class="controlbutton" id="left" onmousedown='onclickArrow("left")' onmouseup='onclickArrow("stay")'>
+                    <img src="images/robot.png" alt="robot" class="controlbutton" id="stay" onmousedown='onclickArrow("stay")' onmouseup='onclickArrow("stay")'>
+                    <img src="images/right.png" alt="right" class="controlbutton" id="right" onmousedown='onclickArrow("right")' onmouseup='onclickArrow("stay")'>
+                    <img src="images/backward.png" alt="backward" class="controlbutton" id="backward" onmousedown='onclickArrow("backward")' onmouseup='onclickArrow("stay")'>
+                </div>
+                <button onclick="shoot()">SHOOT</button>
+        </div>
+        <div id="timer">
+
+                <h2 class = "timertext">Timer (seconds)</h2>
+                <h1 class = "timertext" id="seconds">0</h1>
+
+        </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.2/build/dat.gui.js"></script>
+    <script src="stats.min.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
+    <script src="demo_util.js"></script>
+    <script src="bundle.js"></script>
+    <!-- <script src="camera.js"></script> -->
+</body>
+
+</html>
